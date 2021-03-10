@@ -46,7 +46,7 @@ body{
 .title{
     text-align: center;
     text-transform: uppercase;
-    color: $blue;
+    color: $d-blue;
     @include font;
     font-size: 28px;
     margin-bottom: 25px;
@@ -55,14 +55,14 @@ body{
 .heart{
     @include flex;
     font-size: 22px;
-    color: #c2c2c2;
+    color: red;
     margin-bottom: 45px;
     &::before,
     &::after{
         content: "";
         width: 90px;
         height: 1px;
-        background: #c2c2c2;
+        background: red;
     }
     .fa{
         margin: 0 14px;
@@ -88,14 +88,14 @@ section{
 
 .header{
     padding-bottom: 122px;
-    @include bg('../img/header_bg.webp');
+    @include bg('../img/header_bg.jpg');
     text-align: center;
     color: $white;
     padding-top: 293px;
     @include _767(padding-top, 200px);
     &-nav{
         padding: 23px 0 10px;
-        background: rgba($color: $d-blue, $alpha: 0.3);
+        background: rgba($color: $d-blue, $alpha: 0.5);
         position: absolute;
         top: 0;
         left: 0;
@@ -295,7 +295,7 @@ section{
     }
     &__title{
         font-size: 22px;
-        color: $blue;
+        color: $d-blue;
         margin-bottom: 30px;
     }
     &__text{
@@ -325,6 +325,7 @@ section{
        text-align: center;
        font-size: 22px; 
        margin-bottom: 30px;
+       color: $d-blue;
     }
     &-row{
         @include flex(); 
@@ -348,7 +349,7 @@ section{
          @include _1999(font-size, 14px);
          @include _991(margin, 0 10px);
          &:hover{
-             color: $blue;
+             color: $d-blue;
          }
          .fa{
              margin-right: 10px;
@@ -376,7 +377,7 @@ section{
             padding: 0 0 17px;
             margin-bottom: 39px;
             font-size: 11px;
-            color: $d-blue;
+            color: #000;
             &::placeholder{
                 color: #5b646e;
             }
@@ -394,7 +395,7 @@ section{
             @include _767(margin-right, auto);
             cursor: pointer;
             .fa{
-                color: $blue;
+                color: $d-blue;
             }
         }
     }
@@ -414,7 +415,7 @@ section{
          font-size: 20px;
          transition: 0.5s;
          &:hover{
-             color: $blue;
+             color: $d-blue;
          }
         }
     }
@@ -486,6 +487,10 @@ section{
             font-size: 12px;
             color: $white;
             line-height: 28.5px;
+            transition: 0.3s;
+            &:hover{
+                color: $blue;
+            }
         }
     }
     .col-xl-3:not(:last-child){
