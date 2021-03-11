@@ -238,7 +238,7 @@ section {
 .header-subtitle {
   font-size: 48px;
   margin-bottom: 25px;
-  font-weight: 100;
+  font-weight: 400;
 }
 
 .header-subtitle span {
@@ -246,7 +246,7 @@ section {
 }
 
 .header-text {
-  font-weight: 100;
+  font-weight: 400;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
