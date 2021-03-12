@@ -436,8 +436,8 @@ section{
         line-height: 25px;
     }
     &__text{
-        @include font(100);
-        font-size: 13px;
+        font-weight: 400;
+        font-size: 12px;
         color: $white;
         line-height: 23px;
     }
